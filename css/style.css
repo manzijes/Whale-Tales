@@ -44,6 +44,7 @@ div {
 
 .container-fluid{
     padding: 0 !important;
+    height: 100%;
 }
 
 img{
