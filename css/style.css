@@ -1,8 +1,33 @@
+@font-face {
+    font-family: Outfit-Regular;
+    src: url("../assets/fonts/Outfit/static/Outfit-Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: Outfit-Light;
+    src: url("../assets/fonts/Outfit/static/Outfit-Light.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: Outfit-Bold;
+    src: url("../assets/fonts/Outfit/static/Outfit-Bold.ttf");
+    font-display: swap;
+}
+
+:root {
+    --dark-blue: #006087;
+    --medium-blue: #1981A4;
+    --green-blue: #20B2AA;
+    --shell-sand: #FFF5EE;
+    --light-sand: #EDD8C5;
+    --desert-sand: #EDD1B6;
+}
+
 body{
     position: relative;
     display: block;
     max-width: 100%;
-    background: #fff;
+    background: var(--medium-blue);
     margin: 0;
     padding: 0;
 }
