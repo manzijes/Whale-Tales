@@ -108,6 +108,23 @@ img{
     bottom: 10%;
 }
 
+/* effects */
+
+.fadein {
+	opacity:0;
+}
+
+.slideinleft {
+    margin-left:-100%;
+    max-width:100%;
+}
+
+.slideinright {
+    margin-left: 100%;
+    max-width:100%;
+}
+    
+
 /* speech bubble */
 
 .box {
@@ -135,8 +152,8 @@ img{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    /* margin-left: 30px;
+    margin-top: 5px; */
 }
  
 @keyframes floating {
