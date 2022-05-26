@@ -28,15 +28,19 @@ body{
     display: block;
     font-family: "Outfit-Regular";
     max-width: 100%;
-    background: var(--medium-blue);
+    background: var(--shell-sand);
     color: var(--shell-sand);
     margin: 0;
     padding: 0;
 }
 
+div{
+    padding: 0 !important;
+}
+
 img{
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
