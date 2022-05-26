@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="drop-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 7 7 2 0.12 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="7" dy="7"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="0.24"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="matrix(1.448202, 0, 0, 1.448202, -114.772127, -288.38303)" style="filter: url(#drop-shadow-filter-0);">
+    <path style="fill: rgb(130, 203, 246); stroke: rgb(130, 203, 246);" d="M 89.724 349.27 L 352.686 349.891 C 352.686 349.891 333.747 441.478 277.243 447.376 C 220.739 453.274 172.705 446.847 172.705 446.847 C 172.705 446.847 81.031 443.34 89.724 349.27 Z"/>
+    <path style="fill: rgb(130, 203, 246); stroke: rgb(130, 203, 246);" d="M 352.717 349.788 L 353.617 300.528 C 353.617 300.528 331.573 370.381 279.105 361.689 C 226.637 352.997 325.327 380.589 325.327 380.589 L 352.717 349.788 Z"/>
+    <path style="fill: rgb(130, 203, 246); stroke: rgb(130, 203, 246);" d="M 280.156 292.586 L 376.207 293.313 C 376.207 293.313 327.914 348.807 280.156 292.586 Z" transform="matrix(0.928105, 0.372318, -0.372318, 0.928105, 137.216511, -100.247436)"/>
+    <path style="fill: rgb(130, 203, 246); stroke: rgb(130, 203, 246);" d="M 324.221 290.607 L 417.682 291.334 C 417.682 291.334 370.691 346.829 324.221 290.607 Z" transform="matrix(0.927827, -0.37301, 0.37301, 0.927827, -86.322486, 160.251108)"/>
+    <path style="stroke: rgb(173, 224, 255); fill: rgb(173, 224, 255);" d="M 94.915 395.242 C 94.915 395.242 162.436 371.942 211.524 397.333 C 260.612 422.724 324.723 415.741 324.723 415.741 C 324.723 415.741 308.74 445.17 273.731 447.902 C 238.722 450.634 226.329 452.8 174.497 447.823 C 122.665 442.846 101.474 417.036 94.915 395.242 Z"/>
+    <path style="fill: rgb(130, 203, 246); stroke: rgb(130, 203, 246);" d="M 156.342 397.437 L 278.492 398.67 C 278.492 398.67 217.076 492.716 156.342 397.437 Z" transform="matrix(0.32559, 0.945511, -0.945511, 0.32559, 542.580963, 76.853287)"/>
+    <path style="fill: none; stroke-width: 3px; stroke: rgb(68, 142, 187);" d="M 131.326 371.035 C 131.326 371.035 139.987 357.487 150.265 371.273"/>
+  </g>
+</svg>
