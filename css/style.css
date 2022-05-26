@@ -29,6 +29,7 @@ body{
     font-family: "Outfit-Regular";
     max-width: 100%;
     background: var(--medium-blue);
+    color: var(--shell-sand);
     margin: 0;
     padding: 0;
 }
