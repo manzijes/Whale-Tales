@@ -39,6 +39,7 @@ body{
 
 div {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container-fluid{
