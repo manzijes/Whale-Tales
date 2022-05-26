@@ -16,8 +16,8 @@
 
 :root {
     --dark-blue: #006087;
-    --medium-blue: #1981A4;
-    --green-blue: #20B2AA;
+    --medium-blue: #1E97C4;
+    --green-blue: lightseagreen;
     --shell-sand: #FFF5EE;
     --light-sand: #EDD8C5;
     --desert-sand: #EDD1B6;
@@ -28,7 +28,7 @@ body{
     display: block;
     font-family: "Outfit-Regular";
     max-width: 100%;
-    background: var(--shell-sand);
+    background: skyblue;
     color: var(--shell-sand);
     margin: 0;
     padding: 0;
@@ -43,4 +43,12 @@ img{
     max-height: 100%;
     width: 100%;
     height: auto;
+}
+
+.set-height{
+    height: 100vh;
+}
+
+.ocean-wrapper{
+    background-color: var(--medium-blue);
 }
