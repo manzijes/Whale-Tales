@@ -37,15 +37,11 @@ $( document ).ready(function() {
   var time = today.getHours();
 
   if (time < 12){
-      $("body").css("background-color", "thistle");
-        console.log('morning');
+      $("body").addClass("morning");
   } else if (time >= 12 && time <= 17){
-      $("body").css("background-color", "skyblue");
-        console.log('afternoon');
+      $("body").addClass("afternoon");
   } else if (time >= 17 && time <= 24){
-      $("body").css("background-color", "#030F33");
-      $("body").addClass("starry-background");
-        console.log('evening');
+      $("body").addClass("evening");
   }
 
 });

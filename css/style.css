@@ -22,6 +22,7 @@
     --light-sand: #EDD8C5;
     --desert-sand: #EDD1B6;
     --light-green: #90ee90;
+    --star-color: white;
 }
 
 body{
@@ -29,7 +30,6 @@ body{
     display: block;
     font-family: "Outfit-Regular";
     max-width: 100%;
-    background: skyblue;
     color: var(--shell-sand);
     margin: 0;
     padding: 0;
@@ -37,11 +37,47 @@ body{
     overflow-x: hidden;
 }
 
-.starry-background{
+body.evening{
+    background-color: #030F33;
+}
+body.morning{
+    background-color: plum;
+}
+body.afternoon{
+    background-color: skyblue;
+}
+
+.celestial{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    left: 15%;
+    top: 15%;
+}
+
+.evening .celestial{
+    background: white;
+}
+
+.afternoon .celestial{
+    background: #FFED73;
+}
+
+.morning .celestial{
+    background: #ffff80;
+    z-index: -1;
+    bottom: 15%;
+    top: initial;
+    width: 20vw;
+    height: 20vw;
+}
+
+.evening{
     background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 10px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 10px),
+    radial-gradient(var(--star-color), rgba(255,255,255,.2) 2px, transparent 10px),
+    radial-gradient(var(--star-color), rgba(255,255,255,.15) 1px, transparent 0px),
+    radial-gradient(var(--star-color), rgba(255,255,255,.1) 2px, transparent 10px),
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
