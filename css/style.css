@@ -26,7 +26,7 @@
 body{
     position: relative;
     display: block;
-    font-family: Outfit-Regular;
+    font-family: "Outfit-Regular";
     max-width: 100%;
     background: var(--medium-blue);
     margin: 0;
