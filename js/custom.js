@@ -5,36 +5,53 @@ function randomNumber(min, max) {
 
 $(document).ready(function () {
 
+    // define scroll animations reactive to scroll behavior
+
+    // slow speed
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 5;
-        $(".from-left-to-pos").css("left", progress + "%");
+        $(".from-left-to-right.slow").css("left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 5;
-        $(".from-right-to-pos").css("right", progress + "%");
+        $(".from-right-to-left.slow").css("right", progress + "%");
+    })
+    // medium speed
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        progress = progress / 1.5;
+        $(".from-left-to-right.medium").css("left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 1.5;
-        $(".from-right-to-left").css("right", progress + "%");
+        $(".from-right-to-left.medium").css("right", progress + "%");
+    })
+    // fast speed
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        $(".from-left-to-right.fast").css("left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
-        progress = progress / 1.5;
-        $(".from-left-to-right").css("left", progress + "%");
+        $(".from-right-to-left.fast").css("right", progress + "%");
     })
 
-    // define effects 
+    // define one-time effects triggered by scrolling past element
     $(window).scroll(function () {
         $('.fadein').each(function (i) {
             var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
@@ -46,66 +63,21 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
-        $('.slideinleft.mediumspeed').each(function (i) {
+        $('.slideinleft.medium').each(function (i) {
             var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if (bottom_of_window > bottom_of_element) {
                 $(this).animate({ 'margin-left': '0' }, 1500);
             }
         });
-        $('.slideinleft.slowspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'margin-left': '0' }, 1750);
-            }
-        });
-        $('.slideinleft.fastspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'margin-left': '0' }, 1250);
-            }
-        });
     });
 
     $(window).scroll(function () {
-        $('.left-to-right.randomspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'right': '-100%' }, randomNumber(9000, 14000));
-            }
-        });
-        $('.right-to-left.randomspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'left': '-100%' }, randomNumber(9000, 14000));
-            }
-        });
-    });
-
-    $(window).scroll(function () {
-        $('.slideinright.mediumspeed').each(function (i) {
+        $('.slideinright.medium').each(function (i) {
             var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if (bottom_of_window > bottom_of_element) {
                 $(this).animate({ 'margin-right': '0' }, 1500);
-            }
-        });
-        $('.slideinright.slowspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'margin-right': '0' }, 1750);
-            }
-        });
-        $('.slideinright.fastspeed').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'margin-right': '0' }, 1250);
             }
         });
     });
