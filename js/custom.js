@@ -1,47 +1,120 @@
-$( document ).ready(function() {
+function randomNumber(min, max) {
+    let randomNumber = Math.floor((Math.random() * max) + min);
+    return randomNumber;
+}
 
-  // define effects 
-  $(window).scroll( function(){
-    $('.fadein').each( function(i){
-        var bottom_of_element = $(this).offset().top + ($(this).outerHeight()/2);
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_element ){
-            $(this).animate({'opacity':'1'},1500);
+$(document).ready(function () {
+
+    // define effects 
+    $(window).scroll(function () {
+        $('.fadein').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'opacity': '1' }, 1500);
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+        $('.slideinleft.mediumspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-left': '0' }, 1500);
+            }
+        });
+        $('.slideinleft.slowspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-left': '0' }, 1750);
+            }
+        });
+        $('.slideinleft.fastspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-left': '0' }, 1250);
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+        $('.left-to-right.randomspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'right': '-100%' }, randomNumber(9000, 14000));
+            }
+        });
+        $('.right-to-left.randomspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'left': '-100%' }, randomNumber(9000, 14000));
+            }
+        });
+    });
+
+    $(window).scroll(function () {
+        $('.slideinright.mediumspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-right': '0' }, 1500);
+            }
+        });
+        $('.slideinright.slowspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-right': '0' }, 1750);
+            }
+        });
+        $('.slideinright.fastspeed').each(function (i) {
+            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({ 'margin-right': '0' }, 1250);
+            }
+        });
+    });
+
+    // get current date and time
+    var today = new Date();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    var time = today.getHours();
+
+    if (time < 6) {
+        $("body").addClass("night");
+    } else if (time >= 6 && time <= 12) {
+        $("body").addClass("morning");
+    } else if (time >= 12 && time <= 17) {
+        $("body").addClass("afternoon");
+    } else if (time >= 17 && time <= 24) {
+        $("body").addClass("evening");
+    }
+
+});
+
+jQuery(document).ready(function(e) {
+    var WindowHeight = jQuery(window).height();
+    var load_element = 0;
+    //position of element
+    var scroll_position = jQuery('.whale').offset().top;
+    var screen_height = jQuery(window).height();
+    var activation_offset = 0;
+    var max_scroll_height = jQuery('body').height() + screen_height;
+    var scroll_activation_point = scroll_position - (screen_height * activation_offset);
+    jQuery(window).on('scroll', function(e) {
+        var y_scroll_pos = window.pageYOffset;
+        var element_in_view = y_scroll_pos > scroll_activation_point;
+        var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
+        if (element_in_view || has_reached_bottom_of_page) {
+            jQuery('.whale').addClass("stick");
+        } else {
+            jQuery('.whale').removeClass("stick");
         }
-    }); 
-  });
-
-  $(window).scroll( function(){
-    $('.slideinleft').each( function(i){
-        var bottom_of_element = $(this).offset().top + ($(this).outerHeight()/2);
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_element ){
-            $(this).animate({'margin-left':'0'},1500);
-        }
-    }); 
-  });
-
-  $(window).scroll( function(){
-    $('.slideinright').each( function(i){
-        var bottom_of_element = $(this).offset().top + ($(this).outerHeight()/2);
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_element ){
-            $(this).animate({'margin-left':'0'},1500);
-        }
-    }); 
-  });
-
-  // get current date and time
-  var today = new Date();
-  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-  var time = today.getHours();
-
-  if (time < 12){
-      $("body").addClass("morning");
-  } else if (time >= 12 && time <= 17){
-      $("body").addClass("afternoon");
-  } else if (time >= 17 && time <= 24){
-      $("body").addClass("evening");
-  }
-
+    });
 });

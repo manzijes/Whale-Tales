@@ -37,8 +37,11 @@ body{
     overflow-x: hidden;
 }
 
-body.evening{
+body.night{
     background-color: #030F33;
+}
+body.evening{
+    background-color: steelblue;
 }
 body.morning{
     background-color: plum;
@@ -56,7 +59,7 @@ body.afternoon{
     top: 15%;
 }
 
-.evening .celestial{
+.night .celestial, .evening .celestial{
     background: white;
 }
 
@@ -69,11 +72,11 @@ body.afternoon{
     z-index: -1;
     bottom: 15%;
     top: initial;
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
 }
 
-.evening{
+.night{
     background-image:
     radial-gradient(var(--star-color), rgba(255,255,255,.2) 2px, transparent 10px),
     radial-gradient(var(--star-color), rgba(255,255,255,.15) 1px, transparent 0px),
@@ -95,6 +98,11 @@ div {
     position: relative;
 }
 
+a, a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 img{
     max-width: 100%;
     max-height: 100%;
@@ -102,9 +110,18 @@ img{
     height: auto;
 }
 
-/* .set-height{
+.set-height{
     height: 100vh;
-} */
+}
+
+.stick{
+    height: 100%;
+    top: 0;
+    text-align: center;
+    align-self: center;
+    z-index: 999999;
+    position: fixed;
+}
 
 .beach-wrapper{
     min-height: 30vh;
@@ -113,6 +130,7 @@ img{
     flex-wrap: wrap;
     align-items: center;
     justify-content: end;
+    max-height: calc(100vh - 35px);
 }
 
 .ocean-wrapper{
@@ -131,23 +149,28 @@ img{
     height: auto;
 }
 
-.animal{
+.whale{
     width: 45%;
 }
 
+.small-animal{
+    width: 8%;
+}
+
+
 .seaweed{
-    width: 5%;
+    width: 10%;
     position: absolute;
 }
 
 .seaweed.right{
-    right: -0.5rem;
-    transform: rotate(-40deg);
+    right: 0;
+    transform: rotate(-90deg);
 }
 
 .seaweed.left{
-    left: -0.5rem;
-    transform: rotate(70deg);
+    left: 0;
+    transform: rotate(90deg);
 }
 
 .seaweed.bottom{
@@ -155,6 +178,21 @@ img{
 }
 
 /* effects */
+
+.left-to-right{
+    position: absolute;
+    right: 100%;
+}
+
+.right-to-left{
+    position: absolute;
+    left: 100%;
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
 
 .fadein {
 	opacity:0;
@@ -166,7 +204,7 @@ img{
 }
 
 .slideinright {
-    margin-left: 100%;
+    margin-right: -100%;
     max-width:100%;
 }
     
@@ -181,17 +219,62 @@ img{
     position: absolute;
     border-radius: 20px;
     border: 50% solid white;
+}
+
+.topleft{
     left: 10%;
     top: 20%;
 }
 
+.topright{
+    right: 10%;
+    top: 20%;
+}
+
+.bottomleft{
+    left: 10%;
+    bottom: 20%;
+}
+
+.bottomright{
+    right: 10%;
+    bottom: 20%;
+}
+
+.top{
+    top: 20%;
+}
+
+.bottom{
+    bottom: 20%;
+}
+
 /* footer */
 
-  footer{
+  footer, header{
       background-color: #161b22;
   }
 
   /* animations */
+
+  .glowing{
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    animation: glow 2s infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
 
 .floating { 
     animation-name: floating;
@@ -239,7 +322,7 @@ img{
       .seaweed{
         width: 10%;
     }
-    .animal{
+    .whale{
         width: 55%;
     }
   }
