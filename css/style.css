@@ -114,14 +114,14 @@ img{
     height: 100vh;
 }
 
-.stick{
+/* .stick{
     height: 100%;
     top: 0;
     text-align: center;
     align-self: center;
     z-index: 999999;
     position: fixed;
-}
+} */
 
 .beach-wrapper{
     min-height: 30vh;
