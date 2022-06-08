@@ -5,15 +5,34 @@ function randomNumber(min, max) {
 
 $(document).ready(function () {
 
-    $(window).scroll(function () {
-        $('.tank-2').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $("#whale").animate({ 'margin-right': '100%' }, 1500);
-            }
-        });
-    });
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        progress = progress / 5;
+        $(".from-left-to-pos").css("left", progress + "%");
+    })
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        progress = progress / 5;
+        $(".from-right-to-pos").css("right", progress + "%");
+    })
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        progress = progress / 1.5;
+        $(".from-right-to-left").css("right", progress + "%");
+    })
+    $(document).on("scroll", function () {
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
+        var progress = 100 * pixels / pageHeight;
+        progress = progress / 1.5;
+        $(".from-left-to-right").css("left", progress + "%");
+    })
 
     // define effects 
     $(window).scroll(function () {

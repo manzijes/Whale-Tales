@@ -150,10 +150,12 @@ img{
 }
 
 .whale{
-    width: 45%;
+    width: fit-content;
+    position: absolute;
 }
 
 .small-animal{
+    position: absolute;
     width: 8%;
 }
 
@@ -179,19 +181,11 @@ img{
 
 /* effects */
 
-.left-to-right{
-    position: absolute;
-    right: 100%;
+.from-right-to-left{
+   right: -100%;
 }
-
-.right-to-left{
-    position: absolute;
-    left: 100%;
-    transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+.from-left-to-right{
+   left: -100%;
 }
 
 .fadein {
@@ -222,32 +216,32 @@ img{
 }
 
 .topleft{
-    left: 10%;
+    left: 0%;
     top: 20%;
 }
 
 .topright{
-    right: 10%;
+    right: 0%;
     top: 20%;
 }
 
 .bottomleft{
-    left: 10%;
+    left: 0%;
     bottom: 20%;
 }
 
 .bottomright{
-    right: 10%;
+    right: 0%;
     bottom: 20%;
 }
-
+/* 
 .top{
     top: 20%;
 }
 
 .bottom{
     bottom: 20%;
-}
+} */
 
 /* footer */
 
