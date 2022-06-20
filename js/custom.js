@@ -4,6 +4,56 @@ function randomNumber(min, max) {
 }
 
 $(document).ready(function () {
+    var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern6", "pattern7", "pattern8", "pattern9", "pattern10", "pattern11", "pattern12"];
+    $(".beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
+
+    $(".tree-now").on("click", function () {
+        for (let index = 0; index < 1000; index++) {
+            $(".treemodal .modal-body").append('<img class="tree" src="assets/images/tree.svg" />')
+        }
+    })
+
+    $(".tree-now").on("click", function () {
+        for (let index = 0; index < 1000; index++) {
+            $(".treemodal .modal-body").append('<img class="tree" src="assets/images/tree.svg" />')
+        }
+    })
+
+    function fade() {
+        var animation_height = $(window).innerHeight() * 0.25;
+        var ratio = Math.round((1 / animation_height) * 10000) / 10000;
+    
+        $('img, .box, .infobox').each(function () {
+    
+          var objectTop = $(this).offset().top;
+          var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    
+          if (objectTop < windowBottom) {
+            if (objectTop < windowBottom - animation_height) {
+              $(this).css({
+                transition: 'opacity 0.1s linear',
+                opacity: 1
+              });
+    
+            } else {
+              $(this).css({
+                transition: 'opacity 0.25s linear',
+                opacity: (windowBottom - objectTop) * ratio
+              });
+            }
+          } else {
+            $(this).css('opacity', 0);
+          }
+        });
+      }
+      $('.fade').css('opacity', 0);
+      fade();
+      $(window).scroll(function () { fade(); });
+
+    $(".toggle-info").on("click", function () {
+        $(this).siblings(".infobox").toggleClass("view")
+    })
+
 
     // define scroll animations reactive to scroll behavior
 
@@ -13,14 +63,14 @@ $(document).ready(function () {
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 5;
-        $(".from-left-to-right.slow").css("left", progress + "%");
+        $(".from-left-to-right.slow").css("margin-left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 5;
-        $(".from-right-to-left.slow").css("right", progress + "%");
+        $(".from-right-to-left.slow").css("margin-right", progress + "%");
     })
     // medium speed
     $(document).on("scroll", function () {
@@ -28,27 +78,27 @@ $(document).ready(function () {
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 1.5;
-        $(".from-left-to-right.medium").css("left", progress + "%");
+        $(".from-left-to-right.medium").css("margin-left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
         progress = progress / 1.5;
-        $(".from-right-to-left.medium").css("right", progress + "%");
+        $(".from-right-to-left.medium").css("margin-right", progress + "%");
     })
     // fast speed
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
-        $(".from-left-to-right.fast").css("left", progress + "%");
+        $(".from-left-to-right.fast").css("margin-left", progress + "%");
     })
     $(document).on("scroll", function () {
         var pixels = $(document).scrollTop();
         var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight;
-        $(".from-right-to-left.fast").css("right", progress + "%");
+        $(".from-right-to-left.fast").css("margin-right", progress + "%");
     })
 
     // define one-time effects triggered by scrolling past element

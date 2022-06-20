@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 69 293" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g transform="matrix(2.328445, 0, 0, 2.328445, -987.563735, -276.554753)" style="">
+    <title>Knife</title>
+    <path style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" d="M 438.236 169.975 H 445.182 V 238.092 A 3 3 0 0 1 442.182 241.092 H 441.236 A 3 3 0 0 1 438.236 238.092 V 169.975 Z" bx:shape="rect 438.236 169.975 6.946 71.117 0 0 3 3 1@79b74cc0"/>
+    <path style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" d="M 445.129 170.12 L 445.776 121.202 C 445.776 121.202 424.026 164.217 438.014 169.716 L 445.129 170.12 Z"/>
+    <path style="fill: rgb(236, 236, 236); stroke-width: 0px; stroke: rgb(219, 219, 219);" d="M 438.639 155.047 H 444.596 V 180.867 A 2.979 3 0 0 1 441.618 183.867 H 441.618 A 2.979 3 0 0 1 438.639 180.867 V 155.047 Z" bx:shape="rect 438.639 155.047 5.957 28.82 0 0 3 3 1@fe80fbea"/>
+  </g>
+</svg>

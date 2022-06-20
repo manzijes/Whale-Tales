@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 240 354" xmlns="http://www.w3.org/2000/svg">
+  <path style="fill: none; stroke-linecap: round; stroke-width: 13px; stroke: rgb(214, 90, 92);" d="M 161.212 150.377 L 161.021 226.032 C 161.021 226.032 155.88 256.73 188.864 251.093 L 200.37 249.164 C 200.37 249.164 223.9 247.645 224.74 229.158 C 225.58 210.672 195.118 209.62 195.118 209.62">
+    <title>Leg 1</title>
+  </path>
+  <path style="fill: none; stroke-linecap: round; stroke-width: 13px; stroke: rgb(225, 93, 96);" d="M 100.449 147.248 L 96.698 243.824 C 96.698 243.824 88.494 286.721 51.692 280.392 C 14.89 274.063 12.311 234.683 12.311 234.683 C 12.311 234.683 16.295 161.547 78.414 222.493">
+    <title>Leg 2</title>
+  </path>
+  <path style="fill: none; stroke-linecap: round; stroke-width: 13px; stroke: rgb(214, 90, 92);" d="M 134.413 153.642 L 133.319 303.268 C 133.319 303.268 132.007 333.237 149.945 336.956 C 167.883 340.675 189.32 328.206 189.32 328.206 C 189.32 328.206 196.757 322.081 188.444 304.799 C 180.131 287.517 169.85 289.706 169.85 289.706 L 154.976 291.674">
+    <title>Leg 3</title>
+  </path>
+  <path style="fill: none; stroke-linecap: round; stroke-width: 13px; stroke: rgb(197, 81, 83);" d="M 117.19 150.599 L 114.183 312.986 C 114.183 312.986 113.582 325.315 97.944 329.225 C 82.306 333.135 81.405 301.559 81.405 301.559">
+    <title>Leg 4</title>
+  </path>
+  <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-width: 13px; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 114.822 274.956 L 116.552 150.656" transform="matrix(-1, 0, 0, -1, 231.374012, 425.612006)"/>
+  <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-width: 13px; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 161.3 138.226 L 161.3 183.19"/>
+  <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-width: 13px; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 100.339 145.468 L 98.393 202.754"/>
+  <path style="fill: rgb(216, 216, 216); stroke-linecap: round; stroke-width: 13px; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 133.953 152.817 L 133.953 236.044"/>
+  <ellipse style="fill: rgb(193, 76, 84); stroke: rgb(193, 76, 84);" cx="127.062" cy="71.283" rx="65.669" ry="64.724"/>
+  <rect style="fill: rgb(193, 76, 84); stroke: rgb(193, 76, 84);" x="65.023" y="134.043" width="124.409" height="17.953" rx="9" ry="9"/>
+  <path style="fill: rgb(193, 76, 84); stroke: rgb(193, 76, 84);" d="M 82.607 118.455 C 91.038 125.183 90.973 130.23 82.413 133.592 C 76.401 135.956 82.194 138.9 99.79 142.425 C 105.609 143.591 109.791 139.035 112.34 128.757 C 115.072 117.737 105.161 114.302 82.607 118.455 Z"/>
+  <path style="fill: rgb(193, 76, 84); stroke: rgb(193, 76, 84);" d="M 143.137 140.515 C 151.549 134.157 151.484 129.387 142.944 126.208 C 136.945 123.976 142.725 121.193 160.281 117.861 C 166.086 116.76 170.259 121.066 172.802 130.779 C 175.528 141.194 165.64 144.439 143.137 140.515 Z" transform="matrix(-1, 0, 0, -1, 313.896336, 259.818699)"/>
+  <rect style="stroke: rgb(225, 93, 96); fill: rgb(225, 93, 96);" x="68.91" y="136.768" width="116.288" height="12.588" rx="9" ry="9"/>
+  <path d="M 61.032 71.122 C 61.032 35.376 90.433 6.398 126.701 6.398 C 155.85 6.398 180.563 25.116 189.142 51.022 C 178.731 113.867 99.287 121.396 86.373 122.207 C 70.951 110.363 61.032 91.884 61.032 71.122 Z" style="stroke: rgb(225, 93, 96); fill: rgb(225, 93, 96);"/>
+  <g transform="matrix(1, 0, 0, 1, -63.332467, -127.456598)">
+    <title>Eye left</title>
+    <ellipse style="stroke: rgb(176, 59, 74); fill: rgb(255, 255, 255); stroke-width: 2px;" cx="138.53" cy="270.574" rx="6.734" ry="6.653"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 3px;" d="M 136.032 270.654 L 141.635 270.635"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -63.332467, -127.456598)">
+    <title>Eye right</title>
+    <ellipse style="stroke: rgb(176, 59, 74); fill: rgb(255, 255, 255); stroke-width: 2px;" cx="242.781" cy="270.554" rx="6.734" ry="6.653"/>
+    <path style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 3px;" d="M 240.283 270.634 L 245.886 270.615"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -63.332467, -127.456598)" style="visibility: hidden;">
+    <title>Dots</title>
+    <ellipse style="fill: rgb(176, 59, 74);" cx="166.49" cy="164.712" rx="7.145" ry="7.218"/>
+    <ellipse style="fill: rgb(176, 59, 74);" cx="219.301" cy="206.703" rx="6.408" ry="6.474"/>
+    <ellipse style="fill: rgb(176, 59, 74);" cx="154.711" cy="217.965" rx="5.898" ry="5.958"/>
+    <ellipse style="fill: rgb(193, 76, 84);" cx="168.479" cy="207.006" rx="4.425" ry="4.47"/>
+    <ellipse style="fill: rgb(178, 68, 76);" cx="233.443" cy="231.297" rx="4.425" ry="4.47"/>
+    <ellipse style="fill: rgb(173, 68, 75);" cx="245.347" cy="200.899" rx="3.239" ry="3.273"/>
+    <ellipse style="fill: rgb(176, 59, 74);" cx="230.727" cy="197.607" rx="1.979" ry="2.043"/>
+    <ellipse style="fill: rgb(193, 76, 84);" cx="214.587" cy="158.318" rx="5.732" ry="5.791"/>
+    <ellipse style="fill: rgb(193, 76, 84);" cx="219.679" cy="171.542" rx="4.005" ry="4.046"/>
+    <ellipse style="fill: rgb(193, 76, 84);" cx="205.863" cy="168.886" rx="3.7" ry="3.738"/>
+    <ellipse style="fill: rgb(193, 76, 84);" cx="151.88" cy="173.404" rx="3.46" ry="3.606"/>
+  </g>
+  <path style="fill: none; stroke-width: 13px; stroke-linecap: round; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 72.668 277.766 C 72.668 277.766 60.545 284.003 47.344 279.393"/>
+  <path style="fill: none; stroke-width: 13px; stroke-linecap: round; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 187.376 303.053 C 187.456 303.881 206.496 329.491 172.544 334.655"/>
+  <path style="fill: none; stroke-width: 13px; stroke-linecap: round; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 29.173 200.638 C 28.058 198.171 13.412 212.789 12.009 232.74"/>
+  <path style="fill: none; stroke-width: 13px; stroke-linecap: round; stroke: rgb(181, 56, 79); visibility: hidden;" d="M 221.014 219.621 C 221.014 219.621 232.538 231.687 216.506 243.23"/>
+  <rect style="stroke: rgb(243, 129, 131); fill: rgb(243, 129, 131); visibility: hidden;" x="116.408" y="136.799" width="18.151" height="8.512" rx="4.3" ry="4.3"/>
+  <path style="fill: rgb(176, 59, 74); stroke: rgb(176, 59, 74); visibility: hidden;" d="M 166.382 130.985 L 108.053 127.947 C 108.053 127.947 103.499 125.617 108.159 124.24 C 112.819 122.863 164.713 126.04 164.713 126.04 C 164.713 126.04 164.216 129.12 166.382 130.985 Z"/>
+</svg>

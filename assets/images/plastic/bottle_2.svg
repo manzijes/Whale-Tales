@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 197 395" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g style="" transform="matrix(6.161296, 0, 0, 6.161296, -1087.716325, -213.961719)">
+    <title>Bottle 2</title>
+    <ellipse style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" cx="192.555" cy="54.592" rx="11.304" ry="11.117"/>
+    <path style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" d="M 186.241 62.405 H 199.374 A 6 6 0 0 1 205.374 68.405 V 93.791 A 3 3 0 0 1 202.374 96.791 H 183.241 A 3 3 0 0 1 180.241 93.791 V 68.405 A 6 6 0 0 1 186.241 62.405 Z" bx:shape="rect 180.241 62.405 25.133 34.386 6 6 3 3 1@feceb626"/>
+    <rect x="187.833" y="41.069" width="9.036" height="2.56" style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);"/>
+    <rect x="186.964" y="37.211" width="10.489" height="3.682" style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);"/>
+  </g>
+</svg>

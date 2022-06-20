@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 78 293" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g style="" transform="matrix(2.568979, 0, 0, 2.568979, -910.797804, -333.504857)">
+    <title>Spoon</title>
+    <path style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" d="M 366.258 168.315 H 373.204 V 236.432 A 3 3 0 0 1 370.204 239.432 H 369.258 A 3 3 0 0 1 366.258 236.432 V 168.315 Z" bx:shape="rect 366.258 168.315 6.946 71.117 0 0 3 3 1@e18e2d49"/>
+    <ellipse style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);" cx="369.674" cy="150.648" rx="11.923" ry="17.673"/>
+    <path style="fill: rgb(236, 236, 236); stroke-width: 0px; stroke: rgb(219, 219, 219);" d="M 366.823 156.622 H 372.78 V 182.442 A 2.979 3 0 0 1 369.802 185.442 H 369.802 A 2.979 3 0 0 1 366.823 182.442 V 156.622 Z" bx:shape="rect 366.823 156.622 5.957 28.82 0 0 3 3 1@a103055f"/>
+  </g>
+</svg>

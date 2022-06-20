@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 251 207" xmlns="http://www.w3.org/2000/svg">
+  <path style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);" d="M 55.587 122.796 L 188.775 123.107 C 188.775 123.107 192.178 181.921 124.187 184.095 C 56.196 186.269 55.587 123.417 55.587 122.796 Z">
+    <title>Body</title>
+  </path>
+  <g transform="matrix(1.486546, 0, 0, 1.486546, -201.695254, -130.371462)" style="">
+    <title>Eye left</title>
+    <rect x="198.023" y="143.035" width="4.202" height="31.897" style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);"/>
+    <ellipse style="stroke: rgb(229, 229, 229); fill: rgb(229, 229, 229);" cx="200.157" cy="138.08" rx="6.647" ry="6.872">
+      <title>Outer</title>
+    </ellipse>
+    <ellipse style="stroke: rgb(0, 0, 0);" cx="200.186" cy="138.083" rx="4.246" ry="4.586">
+      <title>Inner</title>
+    </ellipse>
+  </g>
+  <g transform="matrix(1.486546, 0, 0, 1.486546, -149.115099, -130.340197)" style="">
+    <title>Eye right</title>
+    <rect x="198.079" y="142.648" width="4.202" height="31.897" style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);"/>
+    <ellipse style="stroke: rgb(229, 229, 229); fill: rgb(229, 229, 229);" cx="200.157" cy="138.08" rx="6.647" ry="6.872">
+      <title>Outer</title>
+    </ellipse>
+    <ellipse style="stroke: rgb(0, 0, 0);" cx="200.392" cy="138.062" rx="4.246" ry="4.586">
+      <title>Inner</title>
+    </ellipse>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -98.560457, -55.303964)">
+    <title>Claw left</title>
+    <path style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);" d="M 90.505 78.291 L 139.85 78.406 C 139.85 78.406 141.111 100.197 115.92 101.002 C 90.73 101.808 90.505 78.521 90.505 78.291 Z" transform="matrix(0.258818, 0.965926, -0.965926, 0.258818, 171.973128, -44.806047)">
+      <title>left</title>
+    </path>
+    <path style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);" d="M 125.533 78.291 L 174.878 78.406 C 174.878 78.406 176.139 100.197 150.948 101.002 C 125.758 101.808 125.533 78.521 125.533 78.291 Z" transform="matrix(0.25882, -0.965926, 0.965926, 0.25882, 24.731478, 211.544163)">
+      <title>right</title>
+    </path>
+    <path style="fill: none; stroke: rgb(234, 105, 80); stroke-width: 5px; stroke-linecap: round;" d="M 123.025 119.071 C 123.025 119.071 142.612 166.544 176.308 173.52" transform="matrix(0.945519, 0.325568, -0.325568, 0.945519, 55.783137, -40.756227)">
+      <title>Arm left</title>
+    </path>
+  </g>
+  <g transform="matrix(-1, 0, 0, 1, 345.031682, -56.536736)">
+    <title>Claw right</title>
+    <path style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);" d="M 90.505 78.291 L 139.85 78.406 C 139.85 78.406 141.111 100.197 115.92 101.002 C 90.73 101.808 90.505 78.521 90.505 78.291 Z" transform="matrix(0.258818, 0.965926, -0.965926, 0.258818, 171.973128, -44.806047)">
+      <title>right</title>
+    </path>
+    <path style="stroke: rgb(234, 105, 80); fill: rgb(234, 105, 80);" d="M 125.533 78.291 L 174.878 78.406 C 174.878 78.406 176.139 100.197 150.948 101.002 C 125.758 101.808 125.533 78.521 125.533 78.291 Z" transform="matrix(0.25882, -0.965926, 0.965926, 0.25882, 24.731478, 211.544163)">
+      <title>left</title>
+    </path>
+    <path style="fill: none; stroke: rgb(234, 105, 80); stroke-width: 5px; stroke-linecap: round;" d="M 123.026 119.071 C 123.026 119.071 142.613 166.544 176.309 173.52" transform="matrix(0.945519, 0.325568, -0.325568, 0.945519, 55.783191, -40.756553)">
+      <title>Arm right</title>
+    </path>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -99.955133, -61.9287)">
+    <title>Legs left</title>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="168.237 211.24 142.958 227.104 148.635 236.867"/>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="181.05 220.567 155.771 236.431 161.448 246.194"/>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="193.428 228.587 168.149 244.451 173.826 254.214"/>
+  </g>
+  <g transform="matrix(-1, 0, 0, 1, 346.82871, -60.185517)">
+    <title>Legs right</title>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="168.237 211.24 142.958 227.104 148.635 236.867"/>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="181.05 220.567 155.771 236.431 161.448 246.194"/>
+    <polyline style="stroke-linecap: round; stroke: rgb(234, 105, 80); fill: none; stroke-width: 4px;" points="193.428 228.587 168.149 244.451 173.826 254.214"/>
+  </g>
+</svg>

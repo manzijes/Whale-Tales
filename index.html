@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/custom.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header class="text-end py-1 px-4">
     <a href="about-us.html"><i class="fa-solid fa-question pe-2"></i>info</a>
 </header>
+
 <body>
     <div class="container-fluid beach-wrapper">
         <img src="assets/images/beach-small.svg" alt="beach">
@@ -22,23 +26,77 @@
     </div>
 
     <div class="container-fluid text-center ocean-wrapper">
-        <div class="p-3 p-md-4 rounded-pill box topleft pulsing from-left-to-right slow">Hallo, hallo!</div>
-        <img class="whale floating from-right-to-left medium" src="assets/images/mango.svg" alt="whale">
+        <div class="p-3 p-md-4 rounded-pill box glowing align-self-start">Hallo, hallo! Ich bin X. <br> Ich zeige dir
+            heute die Welt der Wale!
+        </div>
+        <img class="whale floating align-self-center slideinright medium" src="assets/images/whale.svg" alt="whale">
         <img class="seaweed right" src="assets/images/seaweed.svg" alt="seaweed">
         <img class="seaweed left bottom" src="assets/images/seaweed.svg" alt="seaweed">
-        <div class="p-3 p-md-4 rounded-pill box bottomright pulsing from-right-to-left slow">Ich bin Name. <br> Ich zeige dir, wie ich lebe!</div>
     </div>
-    <div class="container-fluid text-center ocean-wrapper set-height">
-        <img class="small-animal floating topleft from-left-to-right medium" src="assets/images/fish/Fish (green).svg" alt="fish">
-        <img class="small-animal floating bottomright from-right-to-left fast" src="assets/images/fish/Fish (yellow) mirrored.svg" alt="fish">
+    <div class="container-fluid text-center ocean-wrapper with-padding set-height">
+        <div class="col-12 wrap justify-content-center">
+            <img class="small-animal floating" src="assets/images/fish/fish_orange_mirror.svg" alt="fish">
+            <div class="p-3 p-md-4 rounded-pill box glowing align-self-center">
+                Wusstest du zum Beispiel, dass wir Wale unserer Erde helfen?
+                <br>
+                <strong>Klick auf die Erde</strong>, um mehr zu erfahren!
+            </div>
+            <img class="small-animal floating" src="assets/images/fish/fish_2_purple.svg" alt="fish">
+        </div>
+        <img class="seaweed left bottom" src="assets/images/seaweed.svg" alt="seaweed">
+        <img class="seaweed right bottom" src="assets/images/seaweed.svg" alt="seaweed">
+        <div class="row justify-content-center align-content-center">
+            <div class="p-3 p-md-4 infobox centered col-12 col-lg-4">
+                <i class="fa-solid fa-circle-info"></i> <br>
+                Mit ihren Ausscheidungen versorgen sie das marine Ökosystem mit Nährstoffen,
+                fördern das Wachstum von Phytoplankton und helfen damit sogar beim Kampf
+                gegen die Klimakrise.
+            </div>
+            <img class="toggle-info beating col-12 col-lg-4" src="assets/images/globe.svg" alt="globe">
+            <div class="p-3 p-md-4 infobox centered col-12 col-lg-4">
+                <i class="fa-solid fa-circle-info"></i> <br>
+                Phytoplankton kann nämlich enorme Mengen CO2 aufnehmen.
+                So sorgt ein einziger von uns Walen in seinem Leben im Durchschnitt für die Speicherung von so
+                viel Kohlenstoff wie <br>
+                <button class="tree-now" data-bs-toggle="modal" data-bs-target="#tree-modal">1.000 Bäume.</button>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid text-center ocean-wrapper set-height">
-        <img class="small-animal floating topleft from-left-to-right fast" src="assets/images/fish/Fish (blue).svg" alt="fish">
-        <img class="small-animal floating bottomright from-right-to-left medium" src="assets/images/fish/Fish 2 (lachs).svg" alt="fish">
+    <!-- Modal -->
+    <div class="modal treemodal" id="tree-modal" tabindex="-1" aria-labelledby="tree-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tree-modal">1000 Bäume sind eine ganze Menge!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center ocean-wrapper">
+        <img class="plastic floating align-self-start" src="assets/images/plastic/chips.svg" alt="plastic">
+        <img class="plastic floating align-self-end" src="assets/images/plastic/bottle_2.svg" alt="plastic">
+        <div class="p-3 p-md-4 my-5 rounded-pill box glowing align-self-center">
+           Aber leider ist nicht immer alles paletti. <br>
+           Vielleicht hast du das Plastik schon bemerkt, <br> das hier bei uns herumschwimmt.
+        </div>
+        <img class="whale floating align-self-center slideinleft medium" src="assets/images/whale_mirror.svg" alt="whale">
+        <img class="plastic floating align-self-start" src="assets/images/plastic/candy.svg" alt="plastic">
+        <img class="seaweed right" src="assets/images/seaweed.svg" alt="seaweed">
+        <img class="seaweed left bottom" src="assets/images/seaweed.svg" alt="seaweed">
+    </div>
+
+    <div class="container-fluid floor-wrapper pattern7">
+        <img class="small-animal no-shadow  align-self-start" src="assets/images/others/starfish.svg" alt="fish">
+        <img class="small-animal move-back-forth no-shadow" src="assets/images/others/crab.svg" alt="fish">
+        <img class="small-animal no-shadow align-self-end" src="assets/images/others/starfish_orange.svg" alt="fish">
     </div>
 
     <footer class="text-end py-2 px-4">
         project by Matchess
     </footer>
 </body>
+
 </html>

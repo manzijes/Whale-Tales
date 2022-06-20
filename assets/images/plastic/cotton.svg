@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 45 228" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(2.386088, 0, 0, 2.386088, -730.259838, -317.567143)" style="">
+    <title>Wattestäbchen</title>
+    <rect x="313.731" y="147.552" width="3.668" height="66.132" style="fill: rgb(236, 236, 236); stroke: rgb(219, 219, 219);"/>
+    <ellipse style="fill: rgb(251, 251, 251); stroke: rgb(219, 219, 219);" cx="315.565" cy="144.218" rx="3.835" ry="7.558"/>
+    <ellipse style="fill: rgb(251, 251, 251); stroke: rgb(219, 219, 219);" cx="315.398" cy="217.352" rx="3.835" ry="7.558"/>
+  </g>
+</svg>
