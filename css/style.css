@@ -204,9 +204,9 @@ img {
     position: relative;
 }
 
-.ocean-wrapper.darker {
+/* .ocean-wrapper.darker {
     background-color: var(--dark-blue);
-}
+} */
 
 .floor-wrapper {
     background-color: #e3dcc5;
