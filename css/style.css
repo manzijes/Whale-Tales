@@ -16,6 +16,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: Grape;
+    src: url("../assets/fonts/Grape_Nuts/GrapeNuts-Regular.ttf");
+    font-display: swap;
+}
+
 :root {
     --dark-blue: #006087;
     --medium-blue: #1E97C4;
@@ -150,7 +156,21 @@ img {
     align-items: center;
     flex-wrap: wrap;
     min-height: 300px;
-    border: 1px solid white;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.fact-box.fun{
+    background-color: lightseagreen;
+}
+
+.fact-box.food{
+    background-color: lightgreen;
+}
+
+.fact-box.social{
+    background-color: lightcoral;
 }
 
 /* .stick{
@@ -184,7 +204,7 @@ img {
     position: relative;
 }
 
-.ocean-wrapper:nth-of-type(odd) {
+.ocean-wrapper.darker {
     background-color: var(--dark-blue);
 }
 
