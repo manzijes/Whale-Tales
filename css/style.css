@@ -98,16 +98,16 @@ div {
     position: relative;
 }
 
-button.tree-now {
-    margin-top: 0.75rem;
-}
-
 button, .button-default{
     background-color: mediumseagreen;
     color: white;
     border: none;
     border-radius: 0.5rem;
     padding: 0.25rem 0.75rem;
+}
+
+button:hover{
+    background-color: rgb(46, 139, 88);
 }
 
 .container-fluid {
@@ -134,6 +134,22 @@ img {
 
 .set-height {
     min-height: 100vh;
+}
+
+.fact-boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 300px;
+    border: 1px solid white;
 }
 
 /* .stick{
@@ -193,11 +209,15 @@ img {
     align-self: flex-start;
 }
 
+.globe{
+    max-height: 450px;
+}
+
 .whale {
     width: 40%;
     position: relative;
-    -webkit-filter: drop-shadow(5px 5px 5px rgb(34, 34, 34, 0.6));
-    filter: drop-shadow(5px 5px 5px rgb(34, 34, 34, 0.6));
+    -webkit-filter: drop-shadow(4px 4px 4px rgb(34, 34, 34, 0.7));
+    filter: drop-shadow(4px 4px 4px rgb(34, 34, 34, 0.7));
 }
 
 .plastic{
@@ -213,8 +233,8 @@ img {
 }
 
 .small-animal:not(.no-shadow){
-    -webkit-filter: drop-shadow(5px 5px 5px rgb(34, 34, 34, 0.6));
-    filter: drop-shadow(5px 5px 5px rgb(34, 34, 34, 0.6));
+    -webkit-filter: drop-shadow(2px 2px 2px rgb(34, 34, 34, 0.7));
+    filter: drop-shadow(2px 2px 2px rgb(34, 34, 34, 0.7));
 }
 
 .centered {
@@ -380,6 +400,7 @@ strong{
     border-radius: 1rem;
     visibility: hidden;
     opacity: 0;
+    display: none;
     transition: all 0.5s;
 }
 
@@ -387,6 +408,7 @@ strong{
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
+    display: block;
 }
 
 .infobox i {
@@ -538,6 +560,9 @@ header {
 
     .whale {
         width: 55%;
+    }
+    .wrap{
+        flex-direction: column;
     }
 }
 
