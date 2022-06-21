@@ -492,7 +492,7 @@ strong{
     min-height: 0;
     padding-bottom: 0 !important;
 }
-.pile img{
+.pile-img{
     width: auto;
     height: 200px;
     max-width: 100%;
