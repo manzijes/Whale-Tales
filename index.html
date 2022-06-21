@@ -53,7 +53,7 @@
                 fördern das Wachstum von Phytoplankton und helfen damit sogar beim Kampf
                 gegen die Klimakrise.
             </div>
-            <img class="toggle-info globe beating col-12 col-lg-4" src="assets/images/globe_4.svg" alt="globe">
+            <img class="toggle-info globe mt-3 mb-5 beating col-12 col-lg-4" src="assets/images/globe_4.svg" alt="globe">
             <div class="p-3 p-md-4 infobox centered col-12 col-lg-4">
                 <i class="fa-solid fa-circle-info"></i> <br>
                 Phytoplankton kann nämlich enorme Mengen CO2 aufnehmen.
@@ -77,23 +77,66 @@
         </div>
     </div>
     <div class="container-fluid text-center ocean-wrapper">
+        <img class="small-animal floating align-self-start" src="assets/images/fish/fish_yellow.svg" alt="fish">
         <div class="p-3 p-md-4 rounded-pill box glowing align-self-center">
             Das ist natürlich noch lange nicht alles, was ich dir über uns Wale erzählen kann.
             <br>
             Wirf einen Blick hierauf:
         </div>
         <div class="row fact-boxes my-3">
-            <div class="col-12 col-lg-4 p-0 fact-box food">
+            <div class="col-12 col-lg-4 p-0 fact-box food shimmer" data-bs-toggle="modal" data-bs-target="#food-modal">
+                <i class="fa-solid fa-seedling"></i>
                 <h2>Nahrung</h2>
             </div>
-            <div class="col-12 col-lg-4 p-0 fact-box social">
+            <div class="col-12 col-lg-4 p-0 fact-box social shimmer" data-bs-toggle="modal" data-bs-target="#social-modal">
+                <i class="fa-solid fa-heart"></i>
                 <h2>Soziales</h2>
             </div>
-            <div class="col-12 col-lg-4 p-0 fact-box fun">
+            <div class="col-12 col-lg-4 p-0 fact-box fun shimmer" data-bs-toggle="modal" data-bs-target="#fun-modal">
+                <i class="fa-solid fa-face-laugh-beam"></i>
                 <h2>Fun Facts</h2>
             </div>
         </div>
     </div>
+        <!-- Modal -->
+        <div class="modal" id="food-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Food!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Modal -->
+    <div class="modal" id="fun-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Fun!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal -->
+        <div class="modal" id="social-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Social!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- THEMA Plastik -->
     <div class="container-fluid text-center ocean-wrapper darker">
@@ -109,7 +152,7 @@
         <img class="seaweed left bottom" src="assets/images/seaweed.svg" alt="seaweed">
     </div>
 
-    <div class="container-fluid floor-wrapper pattern7">
+    <div class="container-fluid floor-wrapper pattern3">
         <img class="small-animal no-shadow  align-self-start" src="assets/images/others/starfish.svg" alt="fish">
         <img class="small-animal move-back-forth no-shadow" src="assets/images/others/crab.svg" alt="fish">
         <img class="small-animal no-shadow align-self-end" src="assets/images/others/starfish_orange.svg" alt="fish">

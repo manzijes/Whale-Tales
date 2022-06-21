@@ -5,9 +5,7 @@ function randomNumber(min, max) {
 
 $(document).ready(function () {
     var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern6", "pattern7", "pattern8", "pattern9", "pattern10", "pattern11", "pattern12"];
-    $(".morning .beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
-    $(".afternoon .beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
-    $(".evening .beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
+    $(".beach-wrapper").not(".night .beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
 
     $(".tree-now").on("click", function () {
         for (let index = 0; index < 1000; index++) {
