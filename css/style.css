@@ -488,6 +488,16 @@ strong{
 .bottom{
     bottom: 20%;
 } */
+.pile{
+    min-height: 0;
+    padding-bottom: 0 !important;
+}
+.pile img{
+    width: auto;
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: -2rem;
+}
 
 /* footer */
 
