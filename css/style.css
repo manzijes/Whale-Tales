@@ -499,6 +499,10 @@ strong{
     margin-bottom: -2rem;
 }
 
+.plastic:hover{
+    cursor: pointer;
+}
+
 /* footer */
 
 footer,
@@ -679,3 +683,38 @@ header {
     background-size: 12px;
 }
 
+.crab:hover{
+    cursor: pointer;
+}
+
+.message, .message-crab {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.message.see, .message-crab.see{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.message p, .message-crab p{
+    width: max-content;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    background: rgb(0, 0, 0, 0.3);
+    border: dotted 5px rgb(255, 255, 255);
+}

@@ -5,7 +5,7 @@ function randomNumber(min, max) {
 
 $(document).ready(function () {
     var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern6", "pattern7", "pattern8", "pattern9", "pattern10", "pattern11", "pattern12"];
-    $(".beach-wrapper").not(".night .beach-wrapper").addClass( classes.splice( ~~(Math.random()*classes.length), 1 )[0] );
+    $(".beach-wrapper").not(".night .beach-wrapper").addClass(classes.splice(~~(Math.random() * classes.length), 1)[0]);
 
     $(".tree-now").on("click", function () {
         for (let index = 0; index < 1000; index++) {
@@ -13,42 +13,53 @@ $(document).ready(function () {
         }
     })
 
-    $(".tree-now").on("click", function () {
-        for (let index = 0; index < 1000; index++) {
-            $(".treemodal .modal-body").append('<img class="tree" src="assets/images/tree.svg" />')
-        }
+    $(".plastic").on("click", function () {
+        $(this).css({
+            visibility: 'hidden',
+            opacity: 1
+        });
+        $(".message").addClass("see").delay(1600).queue(function (n) {
+            $(".message").removeClass("see"); n();
+        });
     })
+
+    $(".crab").on("click", function () {
+        $(".message-crab").addClass("see").delay(1600).queue(function (n) {
+            $(".message-crab").removeClass("see"); n();
+        });
+    })
+
 
     function fade() {
         var animation_height = $(window).innerHeight() * 0.25;
         var ratio = Math.round((1 / animation_height) * 10000) / 10000;
-    
+
         $('img, .box, .infobox').each(function () {
-    
-          var objectTop = $(this).offset().top;
-          var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-    
-          if (objectTop < windowBottom) {
-            if (objectTop < windowBottom - animation_height) {
-              $(this).css({
-                transition: 'opacity 0.1s linear',
-                opacity: 1
-              });
-    
+
+            var objectTop = $(this).offset().top;
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            if (objectTop < windowBottom) {
+                if (objectTop < windowBottom - animation_height) {
+                    $(this).css({
+                        transition: 'opacity 0.1s linear',
+                        opacity: 1
+                    });
+
+                } else {
+                    $(this).css({
+                        transition: 'opacity 0.25s linear',
+                        opacity: (windowBottom - objectTop) * ratio
+                    });
+                }
             } else {
-              $(this).css({
-                transition: 'opacity 0.25s linear',
-                opacity: (windowBottom - objectTop) * ratio
-              });
+                $(this).css('opacity', 0);
             }
-          } else {
-            $(this).css('opacity', 0);
-          }
         });
-      }
-      $('.fade').css('opacity', 0);
-      fade();
-      $(window).scroll(function () { fade(); });
+    }
+    $('.fade').css('opacity', 0);
+    fade();
+    $(window).scroll(function () { fade(); });
 
     $(".toggle-info").on("click", function () {
         $(this).siblings(".infobox").toggleClass("view")
