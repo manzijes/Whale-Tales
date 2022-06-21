@@ -247,6 +247,12 @@ img {
     align-self: flex-start;
 }
 
+.message-crab span {
+    /* text-align: left; */
+    align-self: start;
+    color: rgb(0, 0, 0, 0.3);
+}
+
 /* .globe{
     max-height: 450px;
 } */
@@ -705,7 +711,7 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 100%;
+    width: fit-content;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -713,6 +719,10 @@ header {
     opacity: 0;
     display: flex;
     transition: all 0.5s;
+}
+
+.message-crab{
+    flex-direction: column;
 }
 
 .message.see, .message-crab.see, .message-pile.see{
