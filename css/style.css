@@ -683,11 +683,11 @@ header {
     background-size: 12px;
 }
 
-.crab:hover{
+.crab:hover, .pile-img:hover{
     cursor: pointer;
 }
 
-.message, .message-crab {
+.message, .message-crab, .message-pile {
     position: fixed;
     left: 0;
     right: 0;
@@ -704,13 +704,13 @@ header {
     transition: all 0.5s;
 }
 
-.message.see, .message-crab.see{
+.message.see, .message-crab.see, .message-pile.see{
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
 }
 
-.message p, .message-crab p{
+.message p, .message-crab p, .message-pile p{
     width: max-content;
     margin: 0;
     padding: 2rem;

@@ -29,6 +29,12 @@ $(document).ready(function () {
         });
     })
 
+    $(".pile-img").on("click", function () {
+        $(".message-pile").addClass("see").delay(1600).queue(function (n) {
+            $(".message-pile").removeClass("see"); n();
+        });
+    })
+
 
     function fade() {
         var animation_height = $(window).innerHeight() * 0.25;
