@@ -40,7 +40,7 @@ $(document).ready(function () {
         var animation_height = $(window).innerHeight() * 0.25;
         var ratio = Math.round((1 / animation_height) * 10000) / 10000;
 
-        $('img, .box, .infobox').each(function () {
+        $('img, .box, .infobox').not(".modal img").each(function () {
 
             var objectTop = $(this).offset().top;
             var windowBottom = $(window).scrollTop() + $(window).innerHeight();

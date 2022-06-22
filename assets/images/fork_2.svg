@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 406 320" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Outfit">@import url(https://fonts.googleapis.com/css2?family=Outfit%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&amp;display=swap);</style>
+  </defs>
+  <ellipse style="fill: rgb(0, 36, 164); stroke: rgb(0, 36, 164);" cx="205.304" cy="23.178" rx="16.765" ry="16.765"/>
+  <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 36, 164);" x1="204.901" y1="39.565" x2="204.901" y2="129.903"/>
+  <ellipse style="stroke: rgb(0, 36, 164); fill: rgb(0, 36, 164);" cx="205.278" cy="129.453" rx="16.765" ry="16.765"/>
+  <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 36, 164);" x1="152.289" y1="99.397" x2="152.289" y2="285.811" transform="matrix(0.766044, 0.642788, -0.642788, 0.766044, 159.432482, -52.828702)"/>
+  <ellipse style="stroke: rgb(0, 36, 164); fill: rgb(0, 36, 164);" cx="310.375" cy="265.442" rx="16.765" ry="16.765"/>
+  <ellipse style="stroke: rgb(0, 36, 164); fill: rgb(0, 36, 164);" cx="91.998" cy="265.32" rx="16.765" ry="16.765"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Outfit; font-size: 35px; white-space: pre;" x="3.705" y="310.744">Bartenwale</text>
+  <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 36, 164);" x1="260.187" y1="112.257" x2="260.187" y2="278.021" transform="matrix(0.766045, -0.642787, 0.642787, 0.766045, -64.560746, 212.898593)"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Outfit; font-size: 35px; white-space: pre;" x="243.926" y="311.428">Zahnwale</text>
+</svg>

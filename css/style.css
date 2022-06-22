@@ -467,6 +467,70 @@ strong{
     cursor: pointer;
 }
 
+#food-modal .modal-body img{
+    max-height: 200px;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.modal-body{
+    color: rgb(36, 36, 36);
+}
+
+#food-modal .modal-header, #danger-1-modal .modal-header{
+    background-color: lightsalmon;
+    text-transform: uppercase;
+}
+
+#food-modal h5, #danger-1-modal h5{
+    color: lightsalmon;
+}
+
+#food-modal .modal-title{
+    color: white;
+}
+
+.modal .btn-close:hover{
+    background-color: inherit;
+}
+
+.bg-yellow{
+    background-color: rgb(255, 255, 224);
+}
+.bg-alice{
+    background-color: aliceblue;
+}
+
+#social-modal .modal-header, #social-modal .modal-title, #danger-2-modal .modal-header, #danger-2-modal .modal-title{
+    background-color: lightseagreen;
+    color: white;
+}
+
+#fun-modal .modal-header, #fun-modal .modal-title, #danger-3-modal .modal-header, #danger-3-modal .modal-title{
+    background-color: lightcoral;
+    color: white;
+}
+
+.modal-body p{
+    margin: 0;
+}
+
+.fun-fact {
+    padding: 2rem;
+    background: antiquewhite;
+}
+
+.fun-fact:not(.fun-fact:last-of-type){
+    margin-bottom: 1rem;
+}
+
+
 /* .topleft{
     left: -10%;
     top: 10%;
