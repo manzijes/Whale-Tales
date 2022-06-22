@@ -4,7 +4,7 @@ function randomNumber(min, max) {
 }
 
 $(document).ready(function () {
-    var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern7", "pattern8"];
+    var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern7"];
     $(".beach-wrapper").not(".night .beach-wrapper").addClass(classes.splice(~~(Math.random() * classes.length), 1)[0]);
 
     $(".tree-now").on("click", function () {
