@@ -4,6 +4,10 @@ function randomNumber(min, max) {
 }
 
 $(document).ready(function () {
+    $('.changeable-image').on('click', function () {
+        $(this).children('img').toggleClass('hidden');
+      });
+
     var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern7"];
     $(".beach-wrapper").not(".night .beach-wrapper").addClass(classes.splice(~~(Math.random() * classes.length), 1)[0]);
 
