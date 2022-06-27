@@ -8,7 +8,7 @@ $(document).ready(function () {
         $(this).children('img').toggleClass('hidden');
       });
 
-    var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern5", "pattern7"];
+    var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern7"];
     $(".beach-wrapper").not(".night .beach-wrapper").addClass(classes.splice(~~(Math.random() * classes.length), 1)[0]);
 
     $(".tree-now").on("click", function () {
@@ -167,5 +167,35 @@ $(document).ready(function () {
     } else if (time >= 17 && time <= 24) {
         $("body").addClass("evening");
     }
+
+    
+// slider
+$(".slidercontent").hide();
+$(".slidercontent:nth-child(1)").fadeIn("slow");
+
+var current = 1; var max = $( "li" ).length +1;
+
+function changeUp() { 
+    $(".slidercontent").hide(); 
+    current += 1; 
+    if (current === max) { 
+    current = 1; 
+    } 
+    $(".slidercontent:nth-child(" + current + ")").fadeIn("slow"); }
+
+    function changeDown() { 
+        $(".slidercontent").hide(); 
+        current -= 1;
+        if (current === 0) { 
+        current = max - 1; 
+        }
+        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow"); }
+
+        $(".sliderspot2").click(function() { changeUp(); });
+$(".sliderspot").click(function() { changeDown(); });
+
+function startChange() { changeIt = setInterval(function(){ changeUp(); }, 10000); };
+
+function stopChange() { clearInterval(changeIt); }
 
 });
