@@ -80,6 +80,14 @@ body.afternoon {
     background: #FFED73;
 }
 
+header{
+    min-height: 35px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Outfit-Regular";
+}
+
 .morning .celestial {
     background: #ffff80;
     z-index: -1;
@@ -1053,6 +1061,11 @@ body.about-us{
 
 .about-us > .container-fluid{
     padding: 3rem !important;
+}
+
+.about-us a:not(header a){
+    color: darkblue;
+    text-decoration: underline;
 }
 
 .teas{
