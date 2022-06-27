@@ -385,6 +385,12 @@ strong{
     animation: move 50s infinite;
 }
 
+@keyframes move {
+    0%   {right: 0;}
+    50%  {right:-85%;}
+    100% {right: 0;}
+  }
+
 /* .shimmer{
     -webkit-mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
     background-repeat: no-repeat;
