@@ -10,9 +10,13 @@ https://getbootstrap.com/docs/5.1/getting-started/introduction/
 
 ### Code Snippets
 https://www.freecodecamp.org/news/css-only-pie-chart/
+
 https://www.w3schools.com/howto/howto_css_timeline.asp
+
 https://codepen.io/tmrDevelops/pen/NPXodB
+
 https://medium.com/@christopherphillips_88739/make-a-custom-quote-slider-using-html-css-and-jquery-d589c961fbcf
+
 https://codepen.io/bitmap/pen/AzowBq
 
 ### Toolkits
