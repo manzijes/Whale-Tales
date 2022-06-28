@@ -1086,6 +1086,14 @@ body.about-us{
 .about-us h2{
     color: var(--dark-blue);
 }
+.about-us button {
+    background: unset;
+    padding: 0;
+}
+
+.teaser-modal .modal-body{
+    margin: 0;
+}
 
 @media (max-width: 768px){
     .teas{
