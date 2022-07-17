@@ -6,7 +6,7 @@ function randomNumber(min, max) {
 $(document).ready(function () {
     $('.changeable-image').on('click', function () {
         $(this).children('img').toggleClass('hidden');
-      });
+    });
 
     var classes = ["pattern1", "pattern2", "pattern3", "pattern4", "pattern7"];
     $(".beach-wrapper").not(".night .beach-wrapper").addClass(classes.splice(~~(Math.random() * classes.length), 1)[0]);
@@ -168,34 +168,38 @@ $(document).ready(function () {
         $("body").addClass("evening");
     }
 
-    
-// slider
-$(".slidercontent").hide();
-$(".slidercontent:nth-child(1)").fadeIn("slow");
 
-var current = 1; var max = $( "li" ).length +1;
+    // slider
+    $(".slidercontent").hide();
+    $(".slidercontent:nth-child(1)").fadeIn("slow");
 
-function changeUp() { 
-    $(".slidercontent").hide(); 
-    current += 1; 
-    if (current === max) { 
-    current = 1; 
-    } 
-    $(".slidercontent:nth-child(" + current + ")").fadeIn("slow"); }
+    var current = 1;
+    var max = $("li").length + 1;
 
-    function changeDown() { 
-        $(".slidercontent").hide(); 
-        current -= 1;
-        if (current === 0) { 
-        current = max - 1; 
+    function changeUp() {
+        $(".slidercontent").hide();
+        current += 1;
+        if (current === max) {
+            current = 1;
         }
-        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow"); }
+        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+    }
 
-        $(".sliderspot2").click(function() { changeUp(); });
-$(".sliderspot").click(function() { changeDown(); });
+    function changeDown() {
+        $(".slidercontent").hide();
+        current -= 1;
+        if (current === 0) {
+            current = max - 1;
+        }
+        $(".slidercontent:nth-child(" + current + ")").fadeIn("slow");
+    }
 
-function startChange() { changeIt = setInterval(function(){ changeUp(); }, 10000); };
+    $(".sliderspot2").click(function () { changeUp(); });
+    $(".sliderspot").click(function () { changeDown(); });
 
-function stopChange() { clearInterval(changeIt); }
+    function startChange() { changeIt = setInterval(function () { changeUp(); }, 10000); };
+    startChange();
+
+    function stopChange() { clearInterval(changeIt); }
 
 });
