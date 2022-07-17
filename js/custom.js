@@ -4,6 +4,18 @@ function randomNumber(min, max) {
 }
 
 $(document).ready(function () {
+    let uncollected = 9;
+
+    function allClean(){
+        if (uncollected == 0) {
+            $(".framed-box").removeClass("no-c");
+        }
+    }
+
+    $('.framed-box button').on('click', function () {
+        $('.framed-box').addClass("no-c");
+    });
+
     $('.changeable-image').on('click', function () {
         $(this).children('img').toggleClass('hidden');
     });
@@ -22,9 +34,12 @@ $(document).ready(function () {
             visibility: 'hidden',
             opacity: 1
         });
+        $(this).removeClass("uncollected");
         $(".message").addClass("see").delay(1600).queue(function (n) {
             $(".message").removeClass("see"); n();
         });
+        uncollected = uncollected - 1;
+        allClean();
     })
 
     $(".crab").on("click", function () {
@@ -74,64 +89,6 @@ $(document).ready(function () {
     $(".toggle-info").on("click", function () {
         $(this).siblings(".infobox").toggleClass("view")
     })
-
-
-    // define scroll animations reactive to scroll behavior
-
-    // slow speed
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        progress = progress / 5;
-        $(".from-left-to-right.slow").css("margin-left", progress + "%");
-    })
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        progress = progress / 5;
-        $(".from-right-to-left.slow").css("margin-right", progress + "%");
-    })
-    // medium speed
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        progress = progress / 1.5;
-        $(".from-left-to-right.medium").css("margin-left", progress + "%");
-    })
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        progress = progress / 1.5;
-        $(".from-right-to-left.medium").css("margin-right", progress + "%");
-    })
-    // fast speed
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        $(".from-left-to-right.fast").css("margin-left", progress + "%");
-    })
-    $(document).on("scroll", function () {
-        var pixels = $(document).scrollTop();
-        var pageHeight = $(document).height() - $(window).height();
-        var progress = 100 * pixels / pageHeight;
-        $(".from-right-to-left.fast").css("margin-right", progress + "%");
-    })
-
-    // define one-time effects triggered by scrolling past element
-    $(window).scroll(function () {
-        $('.fadein').each(function (i) {
-            var bottom_of_element = $(this).offset().top + ($(this).outerHeight() / 2);
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({ 'opacity': '1' }, 1500);
-            }
-        });
-    });
 
     $(window).scroll(function () {
         $('.slideinleft.medium').each(function (i) {

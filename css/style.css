@@ -80,6 +80,58 @@ body.afternoon {
     background: #FFED73;
 }
 
+.framed-box{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    bottom: 0;
+    background-color: white;
+    border: 15px solid white;
+    z-index: 999999999;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	animation: 10s rotate linear infinite;
+    color: black;
+    padding-bottom: 1rem;
+    transition: all 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.framed-box.no-c{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.framed-box button{
+    height: min-content;
+    background-color: transparent;
+    color: #000;
+    font-size: 24px;
+    padding: 0 10px;
+    float: right;
+    align-self: end;
+}
+
+.framed-box button:hover{
+    background-color: transparent;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 header{
     min-height: 35px;
     display: flex;
@@ -516,7 +568,6 @@ strong{
     color: white;
 }
 
-
 /* changeable image */
 
 .changeable-image{
@@ -572,34 +623,6 @@ strong{
     font-size: 10rem;
 }
 
-
-/* .topleft{
-    left: -10%;
-    top: 10%;
-}
-
-.topright{
-    right: -10%;
-    top: 10%;
-}
-
-.bottomleft{
-    left: -10%;
-    bottom: 10%;
-}
-
-.bottomright{
-    right: -10%;
-    bottom: 10%;
-} */
-/* 
-.top{
-    top: 20%;
-}
-
-.bottom{
-    bottom: 20%;
-} */
 .pile{
     min-height: 0;
     padding-bottom: 0 !important;
