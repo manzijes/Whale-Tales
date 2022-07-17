@@ -19,6 +19,8 @@ https://medium.com/@christopherphillips_88739/make-a-custom-quote-slider-using-h
 
 https://codepen.io/bitmap/pen/AzowBq
 
+https://codepen.io/adtcreate/pen/gyrRzP
+
 ### Toolkits
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css
 
