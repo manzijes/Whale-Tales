@@ -202,4 +202,7 @@ $(document).ready(function () {
 
     function stopChange() { clearInterval(changeIt); }
 
+    $(".sliderspot2").click(function() { stopChange(); changeUp(); startChange(); });
+    $(".sliderspot").click(function() { stopChange(); changeDown(); startChange(); });
+
 });
