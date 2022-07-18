@@ -101,6 +101,11 @@ body.afternoon {
     visibility: visible;
 }
 
+.framed-box p {
+    padding: 0.5rem;
+    text-align: center;
+}
+
 .framed-box.no-c{
     opacity: 0;
     visibility: hidden;

@@ -4,7 +4,7 @@ function randomNumber(min, max) {
 }
 
 $(document).ready(function () {
-    let uncollected = 9;
+    let uncollected = 1;
 
     function allClean(){
         if (uncollected == 0) {
