@@ -1,7 +1,10 @@
 # whale-tales
 
-## Zur Seite
+## Zur Website
 https://manzijes.github.io/whale-tales/
+
+## Hintergrund
+https://manzijes.github.io/whale-tales/about-us.html
  
 ## Quellen für die technische Umsetzung
 
